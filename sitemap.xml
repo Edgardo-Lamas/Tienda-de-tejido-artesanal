@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://handyman-artesanias.github.io/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://handyman-artesanias.github.io/img/gorras/WhatsApp Image 2025-09-18 at 12.21.33.jpeg</image:loc>
+            <image:caption>Gorras artesanales HANDYMAN</image:caption>
+        </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://handyman-artesanias.github.io/img/reels/thumbnail1.jpg</video:thumbnail_loc>
+            <video:title>El Arte del Poncho - HANDYMAN</video:title>
+            <video:description>Proceso completo de creación de un poncho tradicional patagónico</video:description>
+            <video:content_loc>https://handyman-artesanias.github.io/reels/El poncho.mp4</video:content_loc>
+        </video:video>
+    </url>
+
+    <!-- Tienda -->
+    <url>
+        <loc>https://handyman-artesanias.github.io/pages/tienda.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Sobre Nosotros -->
+    <url>
+        <loc>https://handyman-artesanias.github.io/pages/sobre-nosotros.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Contacto -->
+    <url>
+        <loc>https://handyman-artesanias.github.io/pages/contacto.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Arte -->
+    <url>
+        <loc>https://handyman-artesanias.github.io/pages/arte.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Artículos -->
+    <url>
+        <loc>https://handyman-artesanias.github.io/pages/articulos.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Historias -->
+    <url>
+        <loc>https://handyman-artesanias.github.io/pages/historias.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Testimonios -->
+    <url>
+        <loc>https://handyman-artesanias.github.io/pages/testimonios.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>

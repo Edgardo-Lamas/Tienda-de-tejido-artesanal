@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - HANDYMAN</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --cream: #FAF7F2;
+            --warm-beige: #E8DDD4;
+            --terracotta: #C19A7E;
+            --sage-green: #7D8B7A;
+            --charcoal: #2C3E50;
+            --soft-gray: #6C7B7F;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--cream), var(--warm-beige));
+            color: var(--charcoal);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+        
+        .error-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--terracotta);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        
+        .error-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            color: var(--soft-gray);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .wool-animation {
+            width: 120px;
+            height: 120px;
+            margin: 2rem auto;
+            position: relative;
+        }
+        
+        .yarn-ball {
+            width: 80px;
+            height: 80px;
+            background: var(--terracotta);
+            border-radius: 50%;
+            position: relative;
+            margin: 20px auto;
+            animation: bounce 2s infinite;
+        }
+        
+        .yarn-strand {
+            position: absolute;
+            width: 2px;
+            height: 30px;
+            background: var(--sage-green);
+            top: -30px;
+            left: 50%;
+            transform-origin: bottom;
+            animation: sway 3s ease-in-out infinite;
+        }
+        
+        .yarn-strand:nth-child(2) {
+            animation-delay: -0.5s;
+            left: 40%;
+        }
+        
+        .yarn-strand:nth-child(3) {
+            animation-delay: -1s;
+            left: 60%;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        @keyframes sway {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(10deg);
+            }
+        }
+        
+        .home-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--terracotta);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(193, 154, 126, 0.3);
+        }
+        
+        .home-button:hover {
+            background: var(--sage-green);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(125, 139, 122, 0.4);
+        }
+        
+        .suggestions {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--warm-beige);
+        }
+        
+        .suggestion-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .suggestion-link {
+            color: var(--soft-gray);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            border: 1px solid var(--warm-beige);
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .suggestion-link:hover {
+            background: var(--warm-beige);
+            color: var(--charcoal);
+        }
+        
+        @media (max-width: 768px) {
+            .error-number {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-message {
+                font-size: 1rem;
+            }
+            
+            .error-container {
+                padding: 1rem;
+            }
+            
+            .suggestion-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-number">404</div>
+        
+        <div class="wool-animation">
+            <div class="yarn-ball">
+                <div class="yarn-strand"></div>
+                <div class="yarn-strand"></div>
+                <div class="yarn-strand"></div>
+            </div>
+        </div>
+        
+        <h1 class="error-title">Página no encontrada</h1>
+        
+        <p class="error-message">
+            Parece que esta página se ha desenredado como un ovillo... 
+            <br>No te preocupes, podemos ayudarte a encontrar el camino de vuelta.
+        </p>
+        
+        <a href="/" class="home-button">Volver al Inicio</a>
+        
+        <div class="suggestions">
+            <p>Quizás estabas buscando:</p>
+            <div class="suggestion-links">
+                <a href="/pages/tienda.html" class="suggestion-link">Nuestra Tienda</a>
+                <a href="/pages/sobre-nosotros.html" class="suggestion-link">Sobre Nosotros</a>
+                <a href="/pages/contacto.html" class="suggestion-link">Contacto</a>
+                <a href="/#productos" class="suggestion-link">Productos</a>
+                <a href="/#reels" class="suggestion-link">Galería</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

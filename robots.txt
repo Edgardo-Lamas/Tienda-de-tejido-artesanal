@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://handyman-artesanias.github.io/sitemap.xml
+
+# Disallow admin areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow important pages
+Allow: /
+Allow: /pages/
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /reels/
+
+# Crawl delay (optional)
+Crawl-delay: 1

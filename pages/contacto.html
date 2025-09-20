@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - HANDYMAN | Conectate con Nosotros</title>
+    <meta name="description" content="Contactá con HANDYMAN para consultas, pedidos personalizados o información sobre nuestros productos artesanales. Estamos aquí para ayudarte.">
+    <meta name="keywords" content="contacto HANDYMAN, consultas tejidos, pedidos personalizados, artesanías argentina, contacto artesanos">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contacto - HANDYMAN">
+    <meta property="og:description" content="Conectate con nosotros para consultas y pedidos personalizados">
+    <meta property="og:image" content="../img/gorras/WhatsApp Image 2025-09-18 at 12.21.33.jpeg">
+    <meta property="og:url" content="https://handyman-artesanias.github.io/pages/contacto.html">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../index.html" class="logo">HANDYMAN</a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="./arte.html" class="nav-link">Arte</a></li>
+                    <li><a href="./articulos.html" class="nav-link">Artículos</a></li>
+                    <li><a href="./historias.html" class="nav-link">Historias</a></li>
+                    <li><a href="./sobre-nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="./testimonios.html" class="nav-link">Testimonios</a></li>
+                    <li><a href="./tienda.html" class="nav-link">Tienda</a></li>
+                    <li><a href="./contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="./tienda.html" class="btn btn-primary">Ver Tienda</a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Contactanos</h1>
+                <p class="hero-subtitle">
+                    Estamos aquí para ayudarte. Consultanos sobre nuestros productos, 
+                    pedidos personalizados o cualquier duda que tengas.
+                </p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Inicio</a> / <span>Contacto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="contact-methods section-sm">
+        <div class="container">
+            <div class="methods-grid">
+                <div class="method-card scroll-animate">
+                    <div class="method-icon">📱</div>
+                    <h3>WhatsApp</h3>
+                    <p>Respuesta inmediata</p>
+                    <a href="https://wa.me/5491123456789?text=Hola!%20Me%20interesa%20conocer%20más%20sobre%20HANDYMAN" 
+                       target="_blank" class="btn btn-primary">
+                        Escribinos
+                    </a>
+                </div>
+                
+                <div class="method-card scroll-animate">
+                    <div class="method-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>info@handyman.com.ar</p>
+                    <a href="mailto:info@handyman.com.ar" class="btn btn-outline">
+                        Enviar Email
+                    </a>
+                </div>
+                
+                <div class="method-card scroll-animate">
+                    <div class="method-icon">📍</div>
+                    <h3>Visitanos</h3>
+                    <p>Bariloche, Río Negro</p>
+                    <button class="btn btn-outline" onclick="scrollToMap()">
+                        Ver Ubicación
+                    </button>
+                </div>
+                
+                <div class="method-card scroll-animate">
+                    <div class="method-icon">📞</div>
+                    <h3>Teléfono</h3>
+                    <p>+54 9 294 456-7890</p>
+                    <a href="tel:+5492944567890" class="btn btn-outline">
+                        Llamar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Envianos tu consulta</h2>
+                    <p class="contact-description">
+                        Completá el formulario y te responderemos a la brevedad. 
+                        También podés contactarnos directamente por WhatsApp para una respuesta más rápida.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">🕒</div>
+                            <div class="detail-content">
+                                <h4>Horarios de Atención</h4>
+                                <p>Lunes a Viernes: 9:00 - 18:00<br>
+                                   Sábados: 10:00 - 14:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon">🚚</div>
+                            <div class="detail-content">
+                                <h4>Envíos</h4>
+                                <p>Realizamos envíos a todo el país<br>
+                                   Consulta por envío gratis</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon">🎨</div>
+                            <div class="detail-content">
+                                <h4>Pedidos Especiales</h4>
+                                <p>Trabajamos pedidos personalizados<br>
+                                   Consultá tiempos de entrega</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h4>Seguinos en redes</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                            <a href="#" class="social-link" aria-label="TikTok">🎬</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre completo *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Motivo de consulta *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Seleccionar motivo</option>
+                            <option value="productos">Consulta sobre productos</option>
+                            <option value="personalizado">Pedido personalizado</option>
+                            <option value="precios">Consulta de precios</option>
+                            <option value="envios">Información sobre envíos</option>
+                            <option value="mayorista">Venta mayorista</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" rows="5" 
+                                  placeholder="Contanos qué necesitás, qué producto te interesa o cualquier consulta que tengas..." 
+                                  required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkbox-custom"></span>
+                            Quiero recibir novedades y ofertas especiales por email
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <span class="checkbox-custom"></span>
+                            Acepto la <a href="#" target="_blank">política de privacidad</a> *
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span class="btn-text">Enviar Mensaje</span>
+                        <span class="btn-loading" style="display: none;">Enviando...</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map-section">
+        <div class="container">
+            <h2 class="section-title text-center">Nuestra Ubicación</h2>
+            <p class="section-description text-center">
+                Visitanos en nuestro taller en Bariloche para conocer de cerca nuestro trabajo
+            </p>
+        </div>
+        
+        <div class="map-container">
+            <!-- Placeholder map - replace with actual map service -->
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <div class="map-icon">🗺️</div>
+                    <h3>HANDYMAN Taller Artesanal</h3>
+                    <p>Bariloche, Río Negro<br>Patagonia Argentina</p>
+                    <div class="map-actions">
+                        <a href="https://maps.google.com/?q=Bariloche,Rio+Negro" 
+                           target="_blank" class="btn btn-primary">
+                            Ver en Google Maps
+                        </a>
+                        <a href="https://wa.me/5491123456789?text=Hola!%20Quiero%20visitar%20el%20taller" 
+                           target="_blank" class="btn btn-outline">
+                            Coordinar Visita
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas <span class="text-gradient">Frecuentes</span></h2>
+                <p class="section-description">
+                    Respondemos las consultas más comunes sobre nuestros productos y servicios
+                </p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Hacen envíos a todo el país?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, realizamos envíos a todo el territorio argentino. Los envíos son gratuitos para compras superiores a $80.000. Para montos menores, el costo del envío se calcula según la zona de destino.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Cuánto tiempo tarda un pedido personalizado?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Los tiempos varían según la complejidad del pedido, pero generalmente oscilan entre 2 a 4 semanas. Te confirmamos el tiempo exacto al momento de tomar el pedido.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Qué materiales utilizan?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Trabajamos exclusivamente con fibras naturales: lana de oveja patagónica, alpaca, llama, mohair y algodón orgánico. Todos nuestros materiales son de origen nacional.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Hacen reparaciones de prendas?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos servicio de reparación y refuerzo de prendas tejidas. Consultá por este servicio enviándonos fotos de la prenda por WhatsApp.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Tienen talleres o cursos de tejido?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Organizamos talleres grupales y clases particulares. Seguinos en redes sociales para enterarte de las próximas fechas o contactanos para coordinar clases particulares.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-sm">
+        <div class="container">
+            <h2>¿Preferís contactarnos directamente?</h2>
+            <p>Escribinos por WhatsApp para una respuesta inmediata</p>
+            <div class="cta-actions">
+                <a href="https://wa.me/5491123456789?text=Hola!%20Quiero%20hacer%20una%20consulta" 
+                   target="_blank" class="btn btn-primary">
+                    💬 WhatsApp
+                </a>
+                <a href="./tienda.html" class="btn btn-outline">Ver Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>HANDYMAN</h4>
+                    <p>Tejidos artesanales con alma. Cada prenda cuenta una historia de tradición, calidad y amor por el arte textil.</p>
+                    <div class="contact-footer">
+                        <p>📧 info@handyman.com.ar</p>
+                        <p>📱 +54 9 294 456-7890</p>
+                        <p>📍 Bariloche, Río Negro</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./arte.html">Arte</a></li>
+                        <li><a href="./tienda.html">Tienda</a></li>
+                        <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Atención al Cliente</h4>
+                    <ul>
+                        <li>Lun - Vie: 9:00 - 18:00</li>
+                        <li>Sábados: 10:00 - 14:00</li>
+                        <li>Domingos: Cerrado</li>
+                        <li><a href="#faq-section">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Recibí nuestras novedades y ofertas especiales</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Tu email" required>
+                        <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </form>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="TikTok">🎬</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 HANDYMAN. Todos los derechos reservados. Hecho con ❤️ para amantes del arte textil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>

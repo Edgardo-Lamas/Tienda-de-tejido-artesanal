@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - HANDYMAN | Artesanías en Tejido</title>
+    <meta name="description" content="Descubre nuestra colección completa de gorras, sweaters, muñecos y ponchos tejidos a mano. Calidad artesanal y envío a todo el país.">
+    <meta name="keywords" content="tienda tejidos, gorras artesanales, sweaters lana, muñecos tejidos, ponchos patagónicos, artesanías">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tienda HANDYMAN - Tejidos Artesanales">
+    <meta property="og:description" content="Colección completa de prendas artesanales tejidas a mano con fibras naturales">
+    <meta property="og:image" content="../img/gorras/WhatsApp Image 2025-09-18 at 12.21.33.jpeg">
+    <meta property="og:url" content="https://handyman-artesanias.github.io/pages/tienda.html">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../index.html" class="logo">HANDYMAN</a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="./arte.html" class="nav-link">Arte</a></li>
+                    <li><a href="./articulos.html" class="nav-link">Artículos</a></li>
+                    <li><a href="./historias.html" class="nav-link">Historias</a></li>
+                    <li><a href="./sobre-nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="./testimonios.html" class="nav-link">Testimonios</a></li>
+                    <li><a href="./tienda.html" class="nav-link active">Tienda</a></li>
+                    <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Nuestra Tienda</h1>
+                <p class="hero-subtitle">Explora nuestra colección completa de tejidos artesanales, cada pieza única y hecha con amor</p>
+                <div class="breadcrumb">
+                    <a href="../index.html">Inicio</a> / <span>Tienda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter and Search Section -->
+    <section class="filters-section section-sm">
+        <div class="container">
+            <div class="filters-header">
+                <div class="search-box">
+                    <input type="text" id="product-search" placeholder="Buscar productos..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="category-filter">Categoría:</label>
+                        <select id="category-filter" class="filter-select">
+                            <option value="all">Todas</option>
+                            <option value="gorras">Gorras</option>
+                            <option value="sweaters">Sweaters</option>
+                            <option value="muñecos">Arte Textil</option>
+                            <option value="ponchos">Ponchos</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="price-filter">Precio:</label>
+                        <select id="price-filter" class="filter-select">
+                            <option value="all">Todos</option>
+                            <option value="low">Hasta $50.000</option>
+                            <option value="medium">$50.000 - $80.000</option>
+                            <option value="high">Más de $80.000</option>
+                        </select>
+                    </div>
+                    
+                    <button class="btn btn-outline" id="clear-filters">Limpiar Filtros</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section section">
+        <div class="container">
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">Todo</button>
+                <button class="tab-btn" data-category="gorras">Gorras</button>
+                <button class="tab-btn" data-category="sweaters">Sweaters</button>
+                <button class="tab-btn" data-category="muñecos">Arte Textil</button>
+                <button class="tab-btn" data-category="ponchos">Ponchos</button>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-container">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            
+            <!-- Search Results -->
+            <div id="search-results" class="products-grid search-results-grid" style="display: none;">
+                <!-- Search results will appear here -->
+            </div>
+            
+            <!-- No Products Message -->
+            <div id="no-products" class="no-products" style="display: none;">
+                <div class="empty-state">
+                    <h3>No se encontraron productos</h3>
+                    <p>Prueba ajustar los filtros o realizar una búsqueda diferente</p>
+                    <button class="btn btn-primary" id="reset-search">Ver todos los productos</button>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="load-more" style="display: none;">
+                    Cargar más productos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="shop-info section-sm">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">🚚</div>
+                    <h3>Envío Gratis</h3>
+                    <p>En compras superiores a $80.000 enviamos gratis a todo el país</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">🔄</div>
+                    <h3>Cambios</h3>
+                    <p>30 días para cambios. Tu satisfacción es nuestra prioridad</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">🎨</div>
+                    <h3>Personalización</h3>
+                    <p>Consultanos por diseños personalizados y únicos</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">💬</div>
+                    <h3>Asesoramiento</h3>
+                    <p>Te ayudamos a elegir la pieza perfecta para vos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-sm">
+        <div class="container">
+            <h2>¿No encontraste lo que buscabas?</h2>
+            <p>Contáctanos y trabajemos juntos en crear la pieza perfecta para ti</p>
+            <div class="cta-actions">
+                <a href="./contacto.html" class="btn btn-primary">Contactanos</a>
+                <a href="https://wa.me/5491123456789" class="btn btn-outline" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>HANDYMAN</h4>
+                    <p>Tejidos artesanales con alma. Cada prenda cuenta una historia de tradición, calidad y amor por el arte textil.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🎬</a>
+                        <a href="#" class="social-link">💬</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#gorras">Gorras</a></li>
+                        <li><a href="#sweaters">Sweaters</a></li>
+                        <li><a href="#muñecos">Arte Textil</a></li>
+                        <li><a href="#ponchos">Ponchos</a></li>
+                        <li><a href="./promociones.html">Promociones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="./testimonios.html">Testimonios</a></li>
+                        <li><a href="./mapa-ferias.html">Ferias</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./historias.html">Historias</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Recibí nuestras novedades y ofertas especiales</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Tu email" required>
+                        <button type="submit" class="btn btn-primary">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 HANDYMAN. Todos los derechos reservados. Hecho con ❤️ para amantes del arte textil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/shop.js"></script>
+</body>
+</html>
