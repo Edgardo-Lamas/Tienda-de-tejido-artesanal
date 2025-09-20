@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HANDYMAN - Prendas artesanales tejidas a mano con amor y dedicación. Descubre nuestra colección única de sweaters, gorras, ponchos y más.">
+    <meta name="keywords" content="tejidos, artesanal, handmade, prendas, lana, sweaters, gorras, ponchos, slow fashion">
+    <meta name="author" content="HANDYMAN">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HANDYMAN - Prendas Artesanales Tejidas a Mano">
+    <meta property="og:description" content="Descubre la calidez de lo artesanal. Cada punto cuenta una historia.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./img/og-image.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkhBTkRZTUFOIC0gUHJlbmRhcyBBcnRlc2FuYWxlcyIsCiAgInNob3J0X25hbWUiOiAiSEFORFlNQU4iLAogICJkZXNjcmlwdGlvbiI6ICJUZWppZG9zIGFydGVzYW5hbGVzIGNvbiBhbG1hLiBDYWRhIHByZW5kYSBjdWVudGEgdW5hIGhpc3RvcmlhIGRlIHRyYWRpY2nDs24sIGNhbGlkYWQgeSBhbW9yIHBvciBlbCBhcnRlIHRleHRpbCBhcmdlbnRpbm8uIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNGQUY3RjIiLAogICJ0aGVtZV9jb2xvciI6ICIjQzE5QTdFIiwKICAib3JpZW50YXRpb24iOiAicG9ydHJhaXQtcHJpbWFyeSIsCiAgImxhbmciOiAiZXMiLAogICJzY29wZSI6ICIvIiwKICAiY2F0ZWdvcmllcyI6IFsic2hvcHBpbmciLCAibGlmZXN0eWxlIiwgImZhc2hpb24iXSwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiLi9pbWcvaWNvbnMvaWNvbi03Mng3Mi5wbmciLAogICAgICAic2l6ZXMiOiAiNzJ4NzIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAicHVycG9zZSI6ICJtYXNrYWJsZSBhbnkiCiAgICB9LAogICAgewogICAgICAic3JjIjogIi4vaW1nL2ljb25zL2ljb24tOTZ4OTYucG5nIiwKICAgICAgInNpemVzIjogIjk2eDk2IiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICAgInB1cnBvc2UiOiAibWFza2FibGUgYW55IgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICIuL2ltZy9pY29ucy9pY29uLTEyOHgxMjgucG5nIiwKICAgICAgInNpemVzIjogIjEyOHgxMjgiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAicHVycG9zZSI6ICJtYXNrYWJsZSBhbnkiCiAgICB9LAogICAgewogICAgICAic3JjIjogIi4vaW1nL2ljb25zL2ljb24tMTQ0eDE0NC5wbmciLAogICAgICAic2l6ZXMiOiAiMTQ0eDE0NCIsCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIsCiAgICAgICJwdXJwb3NlIjogIm1hc2thYmxlIGFueSIKICAgIH0sCiAgICB7CiAgICAgICJzcmMiOiAiLi9pbWcvaWNvbnMvaWNvbi0xNTJ4MTUyLnBuZyIsCiAgICAgICJzaXplcyI6ICIxNTJ4MTUyIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICAgInB1cnBvc2UiOiAibWFza2FibGUgYW55IgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICIuL2ltZy9pY29ucy9pY29uLTE5MngxOTIucG5nIiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAicHVycG9zZSI6ICJtYXNrYWJsZSBhbnkiCiAgICB9LAogICAgewogICAgICAic3JjIjogIi4vaW1nL2ljb25zL2ljb24tMzg0eDM4NC5wbmciLAogICAgICAic2l6ZXMiOiAiMzg0eDM4NCIsCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIsCiAgICAgICJwdXJwb3NlIjogIm1hc2thYmxlIGFueSIKICAgIH0sCiAgICB7CiAgICAgICJzcmMiOiAiLi9pbWcvaWNvbnMvaWNvbi01MTJ4NTEyLnBuZyIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICAgInB1cnBvc2UiOiAibWFza2FibGUgYW55IgogICAgfQogIF0sCiAgInNjcmVlbnNob3RzIjogWwogICAgewogICAgICAic3JjIjogIi4vaW1nL3NjcmVlbnNob3RzL2Rlc2t0b3AucG5nIiwKICAgICAgInNpemVzIjogIjEyODB4NzIwIiwKICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICAgImZvcm1fZmFjdG9yIjogIndpZGUiLAogICAgICAibGFiZWwiOiAiVmlzdGEgcHJpbmNpcGFsIGRlIEhBTkRZTUFOIGVuIGRlc2t0b3AiCiAgICB9LAogICAgewogICAgICAic3JjIjogIi4vaW1nL3NjcmVlbnNob3RzL21vYmlsZS5wbmciLAogICAgICAic2l6ZXMiOiAiMzkweDg0NCIsCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIsCiAgICAgICJmb3JtX2ZhY3RvciI6ICJuYXJyb3ciLAogICAgICAibGFiZWwiOiAiVmlzdGEgcHJpbmNpcGFsIGRlIEhBTkRZTUFOIGVuIG3Ds3ZpbCIKICAgIH0KICBdLAogICJzaG9ydGN1dHMiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIlRpZW5kYSIsCiAgICAgICJzaG9ydF9uYW1lIjogIlRpZW5kYSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJFeHBsb3JhciBwcm9kdWN0b3MgYXJ0ZXNhbmFsZXMiLAogICAgICAidXJsIjogIi9wYWdlcy90aWVuZGEuaHRtbCIsCiAgICAgICJpY29ucyI6IFsKICAgICAgICB7CiAgICAgICAgICAic3JjIjogIi4vaW1nL2ljb25zL3Nob3AtaWNvbi5wbmciLAogICAgICAgICAgInNpemVzIjogIjk2eDk2IgogICAgICAgIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiQ29udGFjdG8iLAogICAgICAic2hvcnRfbmFtZSI6ICJDb250YWN0byIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJQb25lcnNlIGVuIGNvbnRhY3RvIGNvbiBub3NvdHJvcyIsCiAgICAgICJ1cmwiOiAiL3BhZ2VzL2NvbnRhY3RvLmh0bWwiLAogICAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgInNyYyI6ICIuL2ltZy9pY29ucy9jb250YWN0LWljb24ucG5nIiwKICAgICAgICAgICJzaXplcyI6ICI5Nng5NiIKICAgICAgICB9CiAgICAgIF0KICAgIH0KICBdLAogICJyZWxhdGVkX2FwcGxpY2F0aW9ucyI6IFsKICAgIHsKICAgICAgInBsYXRmb3JtIjogIndlYiIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly9oYW5keW1hbi50aWVuZGFudWJlLmNvbS8iCiAgICB9CiAgXSwKICAicHJlZmVyX3JlbGF0ZWRfYXBwbGljYXRpb25zIjogZmFsc2UKfQ==">
+    <meta name="theme-color" content="#C19A7E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="HANDYMAN">
+    <link rel="apple-touch-icon" href="./img/icons/icon-192x192.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "HANDYMAN",
+        "alternateName": "HANDYMAN Artesanías",
+        "description": "Tejidos artesanales con alma. Cada prenda cuenta una historia de tradición, calidad y amor por el arte textil argentino.",
+        "url": "https://handyman-artesanias.github.io/",
+        "logo": "https://handyman-artesanias.github.io/img/logo.png",
+        "image": [
+            "https://handyman-artesanias.github.io/img/gorras/WhatsApp Image 2025-09-18 at 12.21.33.jpeg",
+            "https://handyman-artesanias.github.io/img/muñecos/WhatsApp Image 2025-09-20 at 10.44.36.jpeg"
+        ],
+        "@id": "https://handyman-artesanias.github.io/",
+        "telephone": "+54-294-456-7890",
+        "email": "info@handyman.com.ar",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Bariloche",
+            "addressLocality": "Bariloche",
+            "addressRegion": "Río Negro",
+            "addressCountry": "AR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -41.1335,
+            "longitude": -71.3103
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "10:00",
+                "closes": "14:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.instagram.com/handyman_artesanias",
+            "https://www.facebook.com/handyman.artesanias",
+            "https://wa.me/5491123456789"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "María Elena González"
+        },
+        "foundingDate": "2009",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127"
+        }
+    }
+    </script>
+    
+    <title>HANDYMAN - Prendas Artesanales Tejidas a Mano</title>
+  <link rel="stylesheet" href="/assets/index-50337059.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="./img/logo.svg" alt="HANDYMAN Logo" class="logo">
+                <div class="brand-text">
+                    <h1 class="brand-name">HANDYMAN</h1>
+                    <p class="brand-tagline">Tejidos con Amor</p>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="./pages/arte.html" class="nav-link">Arte</a></li>
+                <li><a href="./pages/articulos.html" class="nav-link">Artículos</a></li>
+                <li><a href="./pages/historias.html" class="nav-link">Historias</a></li>
+                <li><a href="./pages/sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="./pages/testimonios.html" class="nav-link">Testimonios</a></li>
+                <li><a href="./pages/mapa-ferias.html" class="nav-link">Mapa Ferias</a></li>
+                <li><a href="./pages/promociones.html" class="nav-link">E-books</a></li>
+                <li><a href="./pages/tienda.html" class="nav-link">Tienda</a></li>
+                <li><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="./pages/tienda.html" class="btn btn-primary">Ver Tienda</a>
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider" id="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <img src="./img/sweaters/WhatsApp Image 2025-09-18 at 12.21.33.jpeg" alt="Tejidos artesanales" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <h1 class="hero-title">Tejidos con Alma</h1>
+                        <p class="hero-subtitle">Cada punto cuenta una historia de tradición y amor artesanal</p>
+                        <a href="./pages/tienda.html" class="btn btn-secondary">Explorar Colección</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <img src="/assets/WhatsApp Image 2025-09-18 at 12.22.19-55c01190.jpeg" alt="Gorras artesanales" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <h1 class="hero-title">Calidad Natural</h1>
+                        <p class="hero-subtitle">Fibras seleccionadas y técnicas ancestrales en cada prenda</p>
+                        <a href="./pages/tienda.html" class="btn btn-secondary">Ver Productos</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <img src="./img/sweaters/WhatsApp Image 2025-09-20 at 10.45.08.jpeg" alt="Sweaters HANDYMAN" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <h1 class="hero-title">Slow Fashion</h1>
+                        <p class="hero-subtitle">Moda consciente que perdura en el tiempo y en tu corazón</p>
+                        <a href="./pages/sobre-nosotros.html" class="btn btn-secondary">Nuestra Historia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hero Controls -->
+        <button class="hero-nav hero-prev" id="hero-prev">‹</button>
+        <button class="hero-nav hero-next" id="hero-next">›</button>
+        <div class="hero-dots" id="hero-dots"></div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome section-padding">
+        <div class="container">
+            <div class="welcome-content">
+                <span class="section-badge">Bienvenidos a HANDYMAN</span>
+                <h2 class="section-title">Donde cada punto cuenta una <span class="text-gradient">historia</span></h2>
+                <p class="welcome-text">
+                    En HANDYMAN creemos que la moda verdadera trasciende las tendencias. 
+                    Cada una de nuestras prendas es una obra de arte tejida a mano, 
+                    combinando técnicas ancestrales con diseños contemporáneos para crear 
+                    piezas únicas que perduran en el tiempo.
+                </p>
+                <p class="welcome-subtext">
+                    Desde nuestro taller en Argentina, trabajamos con fibras naturales 
+                    cuidadosamente seleccionadas, honrando la tradición artesanal 
+                    mientras construimos un futuro más sostenible para la moda.
+                </p>
+                <div class="welcome-actions">
+                    <a href="./pages/sobre-nosotros.html" class="btn btn-primary">Conoce Nuestra Historia</a>
+                    <a href="./pages/tienda.html" class="btn btn-outline">Explorar Colección</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Selección Especial</span>
+                <h2 class="section-title">Nuestros <span class="text-gradient">Destacados</span></h2>
+                <p class="section-description">
+                    Cada prenda en nuestra colección destacada ha sido cuidadosamente seleccionada 
+                    por su excepcional calidad, diseño único y la historia que lleva tejida en cada fibra.
+                </p>
+            </div>
+            
+            <div class="products-grid" id="featured-products">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            
+            <div class="section-actions">
+                <a href="./pages/tienda.html" class="btn btn-primary">Ver Toda la Colección</a>
+                <a href="./pages/sobre-nosotros.html" class="btn btn-outline">Conoce Nuestra Historia</a>
+            </div>
+            
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Prendas Creadas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Años de Experiencia</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Fibras Naturales</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reels Section -->
+    <section class="reels-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nuestro Proceso</span>
+                <h2 class="section-title">Mira cómo <span class="text-gradient">creamos</span> cada pieza</h2>
+                <p class="section-description">
+                    Descubre el proceso artesanal detrás de cada prenda. 
+                    Desde la selección de fibras hasta el punto final.
+                </p>
+            </div>
+            
+            <div class="reels-grid">
+                <div class="reel-card">
+                    <video controls poster="./img/reels/thumbnail1.jpg">
+                        <source src="/assets/El poncho-2f29b6b2.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <h3>El Arte del Poncho</h3>
+                    <p>Proceso completo de creación de un poncho tradicional patagónico</p>
+                </div>
+                
+                <div class="reel-card">
+                    <video controls poster="./img/reels/thumbnail2.jpg">
+                        <source src="/assets/gorro casual-b4c80c8a.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <h3>Gorro Casual</h3>
+                    <p>Técnica de tejido para crear gorras cómodas y elegantes</p>
+                </div>
+                
+                <div class="reel-card">
+                    <video controls poster="./img/reels/thumbnail3.jpg">
+                        <source src="/assets/ultimo clip-25cca8bc.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <h3>Detalles Finales</h3>
+                    <p>Los toques finales que hacen única cada prenda HANDYMAN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué elegir <span class="text-gradient">HANDYMAN</span>?</h2>
+                <p class="section-description">
+                    Nuestro compromiso con la excelencia se refleja en cada aspecto 
+                    de nuestro proceso creativo y en los valores que nos definen.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💝</div>
+                    <h3>Tejido con Amor</h3>
+                    <p>Cada prenda es creada con dedicación y pasión, poniendo el corazón en cada punto.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍃</div>
+                    <h3>Fibras Naturales</h3>
+                    <p>Utilizamos únicamente materiales naturales de la más alta calidad, respetando el medio ambiente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Calidad Premium</h3>
+                    <p>Técnicas artesanales transmitidas por generaciones garantizan la excelencia en cada detalle.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Comunidad Artesanal</h3>
+                    <p>Formamos parte de una red de artesanos comprometidos con la tradición y la innovación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section-padding bg-light">
+        <div class="container">
+            <div class="process-content">
+                <div class="process-text">
+                    <span class="section-badge">Nuestro Proceso</span>
+                    <h2 class="section-title">Del hilo a la obra maestra</h2>
+                    
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h3>Selección de Fibras</h3>
+                                <p>Elegimos cuidadosamente las mejores fibras naturales, priorizando la calidad y el origen sostenible.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h3>Diseño Artesanal</h3>
+                                <p>Cada prenda es diseñada con atención al detalle, combinando tradición con toques contemporáneos.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h3>Tejido a Mano</h3>
+                                <p>Nuestros artesanos tejen cada punto con paciencia y maestría, creando piezas verdaderamente únicas.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h3>Control de Calidad</h3>
+                                <p>Cada prenda pasa por un riguroso proceso de revisión antes de llegar a tus manos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="./pages/historias.html" class="btn btn-outline">Ver Más Sobre Nuestro Proceso</a>
+                </div>
+                
+                <div class="process-image">
+                    <img src="/assets/WhatsApp Image 2025-09-20 at 10.44.36-95df2cf1.jpeg" alt="Artesano trabajando" loading="lazy">
+                    <div class="process-badge">
+                        <div class="badge-number">15+</div>
+                        <div class="badge-text">Años de experiencia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">¿Listo para descubrir tu próxima prenda favorita?</h2>
+                <p class="cta-text">
+                    Explora nuestra colección completa y encuentra la pieza perfecta 
+                    que refleje tu estilo único y tu amor por lo artesanal.
+                </p>
+                <div class="cta-actions">
+                    <a href="./pages/tienda.html" class="btn btn-primary">Explorar Tienda</a>
+                    <a href="./pages/contacto.html" class="btn btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Section -->
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="./img/logo.svg" alt="HANDYMAN Logo" class="footer-logo">
+                        <div class="brand-text">
+                            <h3>HANDYMAN</h3>
+                            <p>Tejidos con Amor</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Cada prenda cuenta una historia. Creamos piezas únicas con técnicas artesanales 
+                        y materiales naturales de la más alta calidad.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <span>hola@handyman.com.ar</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📞</span>
+                            <span>+54 11 5555-1234</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>Buenos Aires, Argentina</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="./pages/tienda.html">Nuestros Productos</a></li>
+                        <li><a href="./pages/articulos.html">Artículos</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products -->
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul class="footer-links">
+                        <li><a href="./pages/tienda.html?categoria=sweaters">Sweaters</a></li>
+                        <li><a href="./pages/tienda.html?categoria=gorras">Gorras</a></li>
+                        <li><a href="./pages/tienda.html?categoria=ponchos">Ponchos</a></li>
+                        <li><a href="./pages/arte.html">Arte Textil</a></li>
+                        <li><a href="./pages/promociones.html">E-books Gratuitos</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul class="footer-links">
+                        <li><a href="./pages/articulos.html">Guías de Cuidado</a></li>
+                        <li><a href="./pages/testimonios.html">Testimonios</a></li>
+                        <li><a href="./pages/mapa-ferias.html">Mapa de Ferias</a></li>
+                        <li><a href="./pages/historias.html">Historias</a></li>
+                        <li><a href="./pages/contacto.html">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="newsletter-section">
+                <h3>Mantente Conectado</h3>
+                <p>Suscríbete a nuestro newsletter para recibir novedades, promociones exclusivas y contenido sobre el mundo artesanal.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </form>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 HANDYMAN. Todos los derechos reservados. 
+                    <span>•</span> Hecho con ❤️ en Argentina</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="WhatsApp">💬</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+</body>
+</html>
